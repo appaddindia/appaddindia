@@ -3,6 +3,7 @@ import App from "next/app";
 import Head from "next/head";
 import Loader from "../components/Layouts/Loader";
 import GoTop from "../components/Layouts/GoTop";
+import $ from "jquery";
 
 export default class MyApp extends App {
   state = {
