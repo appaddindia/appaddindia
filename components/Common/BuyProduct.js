@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Script from "next/script";
 import { useForm } from "react-hook-form";
 
-const BuyProduct = () => {
+const BuyProduct = (props) => {
   const {
     register,
     handleSubmit,
@@ -189,14 +189,28 @@ const BuyProduct = () => {
             </p>
           )}
         </div>
-
-        <button
-          type="submit"
-          style={{ width: "100%", marginTop: "10px" }}
-          className="default-btn-one"
-        >
-          Proceed for Payment
-        </button>
+        <div className="row">
+          <div className="col-6">
+            <button
+              type="submit"
+              style={{ width: "100%", marginTop: "10px" }}
+              className="default-btn-one"
+            >
+              Proceed for Payment
+            </button>
+          </div>
+          <div className="col-6">
+            <button
+              onClick={() => {
+                props.setShow(false);
+              }}
+              style={{ width: "100%", marginTop: "10px" }}
+              className="default-btn-one"
+            >
+              Cancel the payment
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   );
