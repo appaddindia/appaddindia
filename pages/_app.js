@@ -1,9 +1,16 @@
-import React from "react";
+import "../styles/bootstrap.min.css";
+import "../styles/fontawesome.min.css";
+import "../styles/flaticon.css";
+import "animate.css";
+import "../node_modules/react-modal-video/css/modal-video.min.css";
+import "react-accessible-accordion/dist/fancy-example.css";
+import "../styles/style.css";
+import "../styles/responsive.css";
+
 import App from "next/app";
 import Head from "next/head";
 import Loader from "../components/Layouts/Loader";
 import GoTop from "../components/Layouts/GoTop";
-import $ from "jquery";
 
 export default class MyApp extends App {
   state = {
@@ -71,34 +78,33 @@ export default class MyApp extends App {
           <title>
             Appadd India Pvt. Ltd. | Best SEO Expert | SEO company in bangalore
           </title>
-          {/* Include jQuery script in Head */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
-                window.jQuery ||
-                document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>");
-              `,
+                  window.jQuery ||
+                  document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>");
+                `,
             }}
           />
           {/* Additional script for tag management */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
-                var eppathurl = window.location.origin + window.location.pathname;
-                var eptagmanage = new XMLHttpRequest();
-                eptagmanage.onreadystatechange = function() {
-                  if (this.readyState === 4 && this.status === 200) {
-                    if (this.response !== 0) {
-                      var temp = this.response.split("||||||||||");
-                      jQuery("head").find("title").remove();
-                      jQuery("head").append(temp[0]);
-                      jQuery("body").append(temp[1]);
+                  var eppathurl = window.location.origin + window.location.pathname;
+                  var eptagmanage = new XMLHttpRequest();
+                  eptagmanage.onreadystatechange = function() {
+                    if (this.readyState === 4 && this.status === 200) {
+                      if (this.response !== 0) {
+                        var temp = this.response.split("||||||||||");
+                        jQuery("head").find("title").remove();
+                        jQuery("head").append(temp[0]);
+                        jQuery("body").append(temp[1]);
+                      }
                     }
-                  }
-                };
-                eptagmanage.open("GET", atob("aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDcwNDE4OTI3OTQmZWtleXBhc3M9bjRLdDVDM2ZPajJGTVZJRmxTMFBFUVBjWUlyRkRsNlNwcUpRJnNpdGV1cmw9") + eppathurl);
-                eptagmanage.send();
-              `,
+                  };
+                  eptagmanage.open("GET", atob("aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDcwNDE4OTI3OTQmZWtleXBhc3M9bjRLdDVDM2ZPajJGTVZJRmxTMFBFUVBjWUlyRkRsNlNwcUpRJnNpdGV1cmw9") + eppathurl);
+                  eptagmanage.send();
+                `,
             }}
           />
         </Head>
