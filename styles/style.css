@@ -5743,4 +5743,7 @@ Go Top CSS
   visibility: visible;
   top: 50%;
 }
+#__next{
+  margin-top: -22px;
+}
 /*# sourceMappingURL=style.css.map */
