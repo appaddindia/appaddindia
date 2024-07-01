@@ -31,7 +31,7 @@ export default class MyApp extends App {
       this.handleTagManage();
     }
 
-    // Set loading state after 2 seconds
+    // Set loading state after 2 seconds (example)
     this.timerHandle = setTimeout(
       () => this.setState({ loading: false }),
       2000
@@ -47,25 +47,30 @@ export default class MyApp extends App {
   }
 
   handleTagManage = () => {
-    var eppathurl = window.location.origin + window.location.pathname;
-    var eptagmanage = new XMLHttpRequest();
-    eptagmanage.onreadystatechange = function () {
-      if (this.readyState === 4 && this.status === 200) {
-        if (this.response !== 0) {
-          var temp = this.response.split("||||||||||");
-          $("head").find("title").remove();
-          $("head").append(temp[0]);
-          $("body").append(temp[1]);
+    if (typeof window !== "undefined" && window.jQuery) {
+      var eppathurl = window.location.origin + window.location.pathname;
+      var eptagmanage = new XMLHttpRequest();
+      eptagmanage.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          if (this.response !== "0") {
+            var temp = this.response.split("||||||||||");
+            jQuery("head").find("title").remove();
+            jQuery("head").append(temp[0]);
+            jQuery("body").append(temp[1]);
+          }
         }
-      }
-    };
-    eptagmanage.open(
-      "GET",
-      atob(
-        "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDcwNDE4OTI3OTQmZWtleXBhc3M9bjRLdDVDM2ZPajJGTVZJRmxTMFBFUVBjWUlyRkRsNlNwcUpRJnNpdGV1cmw9"
-      ) + eppathurl
-    );
-    eptagmanage.send();
+      };
+      eptagmanage.open(
+        "GET",
+        atob(
+          "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDcwNDE4OTI3OTQmZWtleXBhc3M9bjRLdDVDM2ZPajJGTVZJRmxTMFBFUVBjWUlyRkRsNlNwcUpRJnNpdGV1cmw9"
+        ) + eppathurl
+      );
+      eptagmanage.send();
+    } else {
+      // Handle case where jQuery is not loaded
+      console.error("jQuery is not loaded or available.");
+    }
   };
 
   render() {
@@ -78,35 +83,37 @@ export default class MyApp extends App {
           <title>
             Appadd India Pvt. Ltd. | Best SEO Expert | SEO company in bangalore
           </title>
+          {/* jQuery fallback */}
           <script
             dangerouslySetInnerHTML={{
-              __html: 
-                  window.jQuery ||
-                  document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>");
-                ,
+              __html: `
+                window.jQuery ||
+                document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>");
+              `,
             }}
           />
           {/* Additional script for tag management */}
           <script
             dangerouslySetInnerHTML={{
-              __html: 
-                  var eppathurl = window.location.origin + window.location.pathname;
-                  var eptagmanage = new XMLHttpRequest();
-                  eptagmanage.onreadystatechange = function() {
-                    if (this.readyState === 4 && this.status === 200) {
-                      if (this.response !== 0) {
-                        var temp = this.response.split("||||||||||");
-                               jQuery("head").find("title").remove();
-                        jQuery("head").append(temp[0]);
-                        jQuery("body").append(temp[1]);
-                      }
+              __html: `
+                var eppathurl = window.location.origin + window.location.pathname;
+                var eptagmanage = new XMLHttpRequest();
+                eptagmanage.onreadystatechange = function() {
+                  if (this.readyState === 4 && this.status === 200) {
+                    if (this.response !== "0") {
+                      var temp = this.response.split("||||||||||");
+                      jQuery("head").find("title").remove();
+                      jQuery("head").append(temp[0]);
+                      jQuery("body").append(temp[1]);
                     }
-                  };
-                  eptagmanage.open("GET", atob("aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDcwNDE4OTI3OTQmZWtleXBhc3M9bjRLdDVDM2ZPajJGTVZJRmxTMFBFUVBjWUlyRkRsNlNwcUpRJnNpdGV1cmw9") + eppathurl);
-                  eptagmanage.send();
-                ,
+                  }
+                };
+                eptagmanage.open("GET", atob("aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDcwNDE4OTI3OTQmZWtleXBhc3M9bjRLdDVDM2ZPajJGTVZJRmxTMFBFUVBjWUlyRkRsNlNwcUpRJnNpdGV1cmw9") + eppathurl);
+                eptagmanage.send();
+              `,
             }}
           />
+          {/* Your other <link> and <meta> tags */}
         </Head>
         <Component {...pageProps} />
         <Loader loading={this.state.loading} />
