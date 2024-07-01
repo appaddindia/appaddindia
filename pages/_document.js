@@ -54,9 +54,9 @@ export default class MyApp extends App {
         if (this.readyState === 4 && this.status === 200) {
           if (this.response !== "0") {
             var temp = this.response.split("||||||||||");
-            jQuery("head").find("title").remove();
-            jQuery("head").append(temp[0]);
-            jQuery("body").append(temp[1]);
+            $("head").find("title").remove();
+            $("head").append(temp[0]);
+            $("body").append(temp[1]);
           }
         }
       };
