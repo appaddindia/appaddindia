@@ -13,7 +13,8 @@ class Index extends Component {
     render() {
         return (
             <>
-                
+                 <Navbar />
+
                 <MainBanner />
 
                 <FeaturesContent />
