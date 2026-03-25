@@ -210,7 +210,7 @@ class Footer extends Component {
                   </li>
                   <li>
                     <Link href="/privacy-policy">
-                      <a>Privacy Policy</a>
+                      {/* <a>Privacy Policy</a> */}
                     </Link>
                   </li>
                 </ul>
