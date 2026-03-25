@@ -19,12 +19,9 @@ class RefundPolicy extends Component {
         <div className="ptb-100">
           <div className="container">
             <h4>Refund Policy</h4>
-            <p>
-              <strong>Last Updated:</strong> March 25, 2026
-            </p>
 
             <p>
-              At Appadd India, we are committed to delivering high-quality
+              At Appadd India Pvt Ltd, we are committed to delivering high-quality
               digital solutions and marketing services with transparency and
               professionalism. This Refund Policy explains the terms under which
               refunds may or may not be issued for services purchased from us.
@@ -36,7 +33,7 @@ class RefundPolicy extends Component {
 
             <h4>1. General Refund Policy</h4>
             <p>
-              All projects and digital services offered by Appadd India involve
+              All projects and digital services offered by Appadd India Pvt Ltd involve
               planning, consultation, resource allocation, execution time,
               technical setup, and in many cases, third-party tools or
               subscriptions.
@@ -93,7 +90,7 @@ class RefundPolicy extends Component {
               <li>Technical implementation and campaign setup done so far</li>
             </ul>
             <p>
-              In such cases, Appadd India reserves the right to assess the
+              In such cases, Appadd India Pvt Ltd reserves the right to assess the
               project status and determine the eligible refund amount fairly.
             </p>
 
@@ -133,7 +130,7 @@ class RefundPolicy extends Component {
               <li>External vendor or platform fees</li>
             </ul>
             <p>
-              Since these costs are paid to third-party providers, Appadd India
+              Since these costs are paid to third-party providers, Appadd India Pvt Ltd
               cannot reverse or refund such amounts once incurred.
             </p>
 
@@ -178,7 +175,7 @@ class RefundPolicy extends Component {
             <h4>7. How to Request a Refund</h4>
             <p>
               To initiate a refund request, the client must officially notify
-              Appadd India through either of the following methods:
+              Appadd India Pvt Ltd through either of the following methods:
             </p>
             <ul>
               <li>Email</li>
@@ -208,7 +205,7 @@ class RefundPolicy extends Component {
             <h4>8. Refund Processing Timeline</h4>
             <p>
               Once a refund request is reviewed and approved, the eligible
-              refund amount will be processed within 7 to 14 business days.
+              refund amount will be processed within 30 to 45 business days.
             </p>
             <p>Refund timelines may vary depending on:</p>
             <ul>
@@ -219,7 +216,7 @@ class RefundPolicy extends Component {
 
             <h4>9. Right to Review &amp; Final Decision</h4>
             <p>
-              Appadd India reserves the right to review each refund request on a
+              Appadd India Pvt Ltd reserves the right to review each refund request on a
               case-by-case basis.
             </p>
             <p>The final refund amount, if any, will depend on:</p>
@@ -239,13 +236,10 @@ class RefundPolicy extends Component {
               If you have any questions regarding this Refund Policy or wish to
               request a refund, please contact us:
             </p>
-            <p>Appadd India</p>
+            <p>Appadd India Pvt Ltd</p>
             <p>
               📧 Email:{" "}
               <a href="mailto:info@appaddindia.com">info@appaddindia.com</a>
-            </p>
-            <p>
-              📞 Phone: <a href="tel:+919845501114">+91 98455 01114</a>
             </p>
           </div>
         </div>
