@@ -114,14 +114,40 @@ class RefundPolicy extends Component {
             <p>
               Please note that any charges paid towards domains, hosting,
               plugins, tools, APIs, themes, software subscriptions, ad spend, or
-              any other third-party services are strictly non-refundable.
+              any other third-party services are not fully refundable and may
+              be deducted from the total refund amount, wherever applicable.
             </p>
+
+            <h5>Domain Transfer / Domain Charges</h5>
             <p>
-              These charges will be deducted from the total refund amount,
-              including but not limited to:
+              If a domain has been purchased or registered as part of the
+              project, the domain will be transferred to the client, wherever
+              applicable.
             </p>
+            <p>Please note:</p>
             <ul>
               <li>Domain registration or renewal charges</li>
+              <li>
+                Domain transfer charges, if applicable, shall be borne by the
+                client
+              </li>
+              <li>
+                Any charges applied by the domain registrar or third-party
+                service provider during transfer will be separately applicable
+              </li>
+            </ul>
+            <p>
+              This is because domain registration and ownership are handled
+              through external providers, and such charges cannot be reversed
+              once processed.
+            </p>
+
+            <h5>Other Third-Party Charges</h5>
+            <p>
+              The following costs, if already incurred, will also be deducted
+              from the refund amount:
+            </p>
+            <ul>
               <li>Hosting charges</li>
               <li>Premium themes or plugins</li>
               <li>SEO tools and software licenses</li>
@@ -130,8 +156,9 @@ class RefundPolicy extends Component {
               <li>External vendor or platform fees</li>
             </ul>
             <p>
-              Since these costs are paid to third-party providers, Appadd India Pvt Ltd
-              cannot reverse or refund such amounts once incurred.
+              Since these services are purchased through third-party providers,
+              Appadd India cannot guarantee reversal or refund of such charges
+              once activated, purchased, or used.
             </p>
 
             <h4>5. Non-Refundable Services</h4>
