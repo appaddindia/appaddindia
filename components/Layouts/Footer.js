@@ -213,6 +213,11 @@ class Footer extends Component {
                       <a>Privacy Policy</a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/refund-policy">
+                      <a>Refund Policy</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
