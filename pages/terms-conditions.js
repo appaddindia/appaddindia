@@ -1,42 +1,177 @@
-import React, { Component } from 'react';
-import NavbarTwo from '../components/Layouts/Navbar';
-import PageBanner from '../components/Common/PageBanner';
-import Footer from '../components/Layouts/Footer';
+import React, { Component } from "react";
+import Link from "next/link";
+import NavbarTwo from "../components/Layouts/Navbar";
+import PageBanner from "../components/Common/PageBanner";
+import Footer from "../components/Layouts/Footer";
 
 class TermsConditions extends Component {
-    render() {
-        return (
-            <>
-                <NavbarTwo />
+  render() {
+    return (
+      <>
+        <NavbarTwo />
 
-                <PageBanner 
-                    pageTitle="Terms & Conditions" 
-                    breadcrumbTextOne="Home" 
-                    breadcrumbTextTwo="Terms & Conditions" 
-                    breadcrumbUrl="/" 
-                />
+        <PageBanner
+          pageTitle="Terms and Conditions"
+          breadcrumbTextOne="Home"
+          breadcrumbTextTwo="Terms and Conditions"
+          breadcrumbUrl="/"
+        />
 
-                <div className="ptb-100">
-                    <div className="container">
-                        <h4>What is Lorem Ipsum?</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div className="ptb-100">
+          <div className="container">
+            <h4>1. Introduction</h4>
+            <p>
+              Welcome to Appadd India Pvt Ltd. By accessing or using our website{" "}
+              <a
+                href="https://appaddindia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://appaddindia.com/
+              </a>
+              , you agree to comply with and be bound by the following Terms and
+              Conditions. If you do not agree, please do not use our website or
+              services.
+            </p>
 
-                        <h4>Why do we use it?</h4>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <h4>2. Services</h4>
+            <p>
+              We provide digital services including but not limited to:
+            </p>
+            <ul>
+              <li>Search Engine Optimization (SEO)</li>
+              <li>Digital Marketing &amp; Social Media Marketing</li>
+              <li>Website Design &amp; Development</li>
+              <li>Mobile App Development</li>
+              <li>Software Development</li>
+              <li>Google Ads / PPC Campaign Management</li>
+            </ul>
+            <p>
+              All services are subject to project scope, agreements, and
+              timelines discussed with clients.
+            </p>
 
-                        <h4>Where does it come from?</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
+            <h4>3. User Responsibilities</h4>
+            <p>By using our website, you agree:</p>
+            <ul>
+              <li>To provide accurate and complete information</li>
+              <li>
+                Not to misuse the website for illegal or unauthorized activities
+              </li>
+              <li>Not to attempt hacking, data theft, or system disruption</li>
+              <li>To respect intellectual property rights</li>
+            </ul>
 
-                        <h4>Where can I get some?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                    </div>
-                </div>
- 
-                <Footer />
-            </>
-        );
-    }
+            <h4>4. Intellectual Property</h4>
+            <p>All content on this website, including:</p>
+            <ul>
+              <li>Text, graphics, logos</li>
+              <li>Website design &amp; code</li>
+              <li>Images and branding</li>
+            </ul>
+            <p>
+              is the property of Appadd India Pvt Ltd and protected under
+              applicable copyright laws.
+            </p>
+            <p>
+              You may not copy, reproduce, or distribute any content without
+              written permission.
+            </p>
+
+            <h4>5. Payments &amp; Refund Policy</h4>
+            <p>
+              All payments for services must be made as per agreed terms.
+            </p>
+            <p>
+              Payments once made are non-refundable, unless otherwise specified
+              in a written agreement.
+            </p>
+            <p>Delayed payments may result in suspension of services.</p>
+
+            <h4>6. Project Delivery &amp; Timelines</h4>
+            <p>
+              Timelines depend on project scope, approvals, and client
+              cooperation.
+            </p>
+            <p>
+              Delays caused due to lack of client input are not our
+              responsibility.
+            </p>
+            <p>
+              We strive to deliver projects on time but do not guarantee exact
+              deadlines in all cases.
+            </p>
+
+            <h4>7. Third-Party Services</h4>
+            <p>
+              We may use third-party tools or platforms such as Google Ads and
+              hosting providers.
+            </p>
+            <p>
+              We are not responsible for issues caused by third-party services.
+            </p>
+            <p>Their terms and policies will also apply.</p>
+
+            <h4>8. Limitation of Liability</h4>
+            <p>Appadd India Pvt Ltd shall not be held liable for:</p>
+            <ul>
+              <li>Any indirect or consequential loss</li>
+              <li>Business interruption</li>
+              <li>Loss of data or revenue</li>
+            </ul>
+            <p>
+              All services are provided on a best-effort basis without
+              guaranteed results.
+            </p>
+
+            <h4>9. No Guarantee of Results</h4>
+            <p>While we follow industry best practices:</p>
+            <ul>
+              <li>SEO rankings, traffic, and conversions are not guaranteed</li>
+              <li>
+                Results depend on multiple external factors, including
+                competition and algorithm changes
+              </li>
+            </ul>
+
+            <h4>10. Termination of Services</h4>
+            <p>We reserve the right to:</p>
+            <ul>
+              <li>Suspend or terminate services for non-payment</li>
+              <li>Terminate access for violation of terms</li>
+            </ul>
+            <p>
+              Clients may terminate services with prior written notice as per
+              agreement.
+            </p>
+
+            <h4>11. Privacy</h4>
+            <p>
+              Your use of the website is also governed by our{" "}
+              <Link href="/privacy-policy">
+                <a>Privacy Policy</a>
+              </Link>
+              , which explains how we collect and use your data.
+            </p>
+
+            <h4>12. Modifications</h4>
+            <p>
+              We may update these Terms and Conditions at any time. Changes will
+              be effective immediately upon posting on this page.
+            </p>
+
+            <h4>13. Governing Law</h4>
+            <p>
+              These Terms shall be governed by the laws of India, with
+              jurisdiction in Bangalore, Karnataka.
+            </p>
+          </div>
+        </div>
+
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default TermsConditions;
